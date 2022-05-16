@@ -1,31 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<widget id="mendixcn.printscreen.PrintScreen" pluginWidget="true" needsEntityContext="true" offlineCapable="true" supportedPlatform="Web" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+<widget id="mendixcn.printscreen.PrintScreen" pluginWidget="true" needsEntityContext="true" offlineCapable="true" supportedPlatform="Web"
+    xmlns="http://www.mendix.com/widget/1.0/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
     <name>PrintScreen</name>
     <description>My widget description</description>
-    <icon/>
+    <icon>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</icon>
     <properties>
         <propertyGroup caption="General">
-            <property key="sampleText" type="string" required="false">
-                <caption>Default value</caption>
-                <description>Sample text input</description>
+            <property key="targetClass" type="string" required="true" defaultValue="">
+                <caption>要打印区域的css样式名</caption>
+                <description>不需要.，并且保证在页面唯一</description>
             </property>
-            <property key="attribute" type="attribute" required="false">
-                <caption>Attribute</caption>
-                <description/>
-                <attributeTypes>
-                    <attributeType name="String"/>
-                </attributeTypes>
+            <property key="orientation" type="enumeration" defaultValue="landscape">
+                <caption>页面方向</caption>
+                <description>选择你的Pdf页面方向</description>
+                <enumerationValues>
+                    <enumerationValue key="portrait">纵向</enumerationValue>
+                    <enumerationValue key="landscape">横向</enumerationValue>
+                </enumerationValues>
             </property>
-            <property key="datasource" type="datasource" required="true" isList="true">
-                <caption>Data Source</caption>
-                <description/>
+            <property key="imgType" type="enumeration" defaultValue="jpeg">
+                <caption>处理类型</caption>
+                <description>选择处理类型：JPEG 或 PNG。 JPEG 速度更快，但不支持透明度。</description>
+                <enumerationValues>
+                    <enumerationValue key="jpeg">JPEG</enumerationValue>
+                    <enumerationValue key="png">PNG</enumerationValue>
+                </enumerationValues>
             </property>
-            <property key="att2" type="attribute" required="false" dataSource="datasource">
-                <caption>att2</caption>
-                <description/>
-                <attributeTypes>
-                    <attributeType name="String"/>
-                </attributeTypes>
+        </propertyGroup>
+        <propertyGroup caption="外观">
+            <property key="buttonText" type="string" required="true" defaultValue="打印">
+                <caption>按钮标题</caption>
+                <description></description>
+            </property>
+            <property key="fileNamePrefix" type="string" required="true" defaultValue="pdf">
+                <caption>文件名前缀</caption>
+                <description>文件名的前缀。将附加时间戳。</description>
             </property>
         </propertyGroup>
     </properties>

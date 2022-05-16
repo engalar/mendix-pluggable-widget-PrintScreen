@@ -18,5 +18,8 @@ export default args => {
       onwarn(warning);
     };
   });
+
+  result[0].output.inlineDynamicImports = true;
+  result[1].output.inlineDynamicImports = true;
   return result;
 };
